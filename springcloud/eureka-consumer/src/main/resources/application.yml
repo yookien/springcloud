@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: eureka-consumer 
+server: 
+  port: 9999 
+feign :
+  hystrix :
+    enabled : true
+ribbon: 
+  eureka: 
+   enabled: true
+eureka:
+  client: 
+    service-url:
+      defaulZone : http://server1:8761/eureka,http://server2:8762/eureka

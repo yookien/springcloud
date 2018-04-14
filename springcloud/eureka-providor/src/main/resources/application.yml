@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: eureka-providor 
+eureka:
+  client: 
+    service-url:
+      defaulZone : http://server1:8761/eureka,http://server2:8762/eureka
